@@ -1,0 +1,6 @@
+@GPES.Application_HostAddress = http://localhost:5054
+
+GET {{GPES.Application_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
