@@ -16,11 +16,6 @@ namespace GPES.Infrastructure.Repositories
             _context = context;
             _dbSet = _context.Set<TEntity>();
         }
-        public async Task<TEntity> GetById(Guid id)
-        {
-            // TODO: Think of a less scuffed way to do this
-            return await _dbSet.FirstOrDefaultAsync(x => ((IBaseDatabaseEntity)x).Id == id);
-        }
 
         public async Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> filter)
         {
