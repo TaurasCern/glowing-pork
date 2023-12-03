@@ -6,4 +6,4 @@
 Docker Desktop, make
 
 ## Steps (for now 1)
-1. In /DevOps/Local folder open any terminal and run `make` command
+1. In /DevOps/Local folder open any terminal and run `make` command while you have docker open
