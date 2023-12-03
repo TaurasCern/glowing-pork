@@ -400,3 +400,5 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+
+DevOps/*/sqlserver

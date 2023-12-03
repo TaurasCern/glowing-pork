@@ -26,6 +26,7 @@ namespace GPES.Application
 
             builder.Services.AddScoped<IUserRepository, SoftDeletableUserRepository>();
 
+            // TODO: create centralized auth
             builder.Services.AddScoped<IPasswordService, PasswordService>();
             builder.Services.AddScoped<IJWTService, JWTService>();
 

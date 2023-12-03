@@ -4,8 +4,11 @@ services:
   sql-server:
     container_name: sql-server
     image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
     ports:
       - "1433:1433"
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=YourStrong@Passw0rd
+    volumes:
+      - ./sqlserver:/var/opt/mssql/data
