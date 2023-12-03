@@ -1,4 +1,3 @@
-
 using GPES.Domain.Services.Auth;
 using GPES.Domain.Services.IServices;
 using GPES.Infrastructure.Database;
@@ -22,7 +21,7 @@ namespace GPES.Application
             // Add services to the container.
             builder.Services.AddDbContext<GPESContext>(options =>
             {
-                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSQLConnection"));
             });
 
             builder.Services.AddScoped<IUserRepository, SoftDeletableUserRepository>();

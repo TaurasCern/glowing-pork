@@ -1,9 +1,6 @@
 ﻿using GPES.Domain.DTO;
-using GPES.Domain.Models.Database;
 using GPES.Domain.Services.IServices;
 using GPES.Infrastructure.Repositories.IRepositories;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 

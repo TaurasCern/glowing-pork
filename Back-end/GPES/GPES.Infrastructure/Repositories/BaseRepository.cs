@@ -1,5 +1,4 @@
-﻿using GPES.Domain.Models.Entities;
-using GPES.Infrastructure.Database;
+﻿using GPES.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 

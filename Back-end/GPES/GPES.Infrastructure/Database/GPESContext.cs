@@ -7,7 +7,7 @@ namespace GPES.Infrastructure.Database
     {
         public GPESContext(DbContextOptions<GPESContext> options) : base(options)
         {
-            
+
         }
 
         public DbSet<User> Users { get; set; }
